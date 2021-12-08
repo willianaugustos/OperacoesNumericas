@@ -1,0 +1,16 @@
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dominio.Servicos.deps.json
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dominio.Servicos.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\ref\Dominio.Servicos.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dominio.Servicos.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dominio.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dominio.Interfaces.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.csproj.AssemblyReference.cache
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.GeneratedMSBuildEditorConfig.editorconfig
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.AssemblyInfoInputs.cache
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.AssemblyInfo.cs
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.csproj.CoreCompileInputs.cache
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\ref\Dominio.Servicos.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dominio.Entidades.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dominio.Entidades.pdb

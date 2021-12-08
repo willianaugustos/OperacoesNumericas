@@ -1,0 +1,254 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\ProjetosPessoais\\OperacoesNumericas\\Testes\\Testes.csproj": {}
+  },
+  "projects": {
+    "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Entidades\\Dominio.Entidades.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Entidades\\Dominio.Entidades.csproj",
+        "projectName": "Dominio.Entidades",
+        "projectPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Entidades\\Dominio.Entidades.csproj",
+        "packagesPath": "C:\\Users\\willian.severino\\.nuget\\packages\\",
+        "outputPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Entidades\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\willian.severino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Interfaces\\Dominio.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Interfaces\\Dominio.Interfaces.csproj",
+        "projectName": "Dominio.Interfaces",
+        "projectPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Interfaces\\Dominio.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\willian.severino\\.nuget\\packages\\",
+        "outputPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\willian.severino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Entidades\\Dominio.Entidades.csproj": {
+                "projectPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Entidades\\Dominio.Entidades.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ProjetosPessoais\\OperacoesNumericas\\Servicos\\Dominio.Servicos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ProjetosPessoais\\OperacoesNumericas\\Servicos\\Dominio.Servicos.csproj",
+        "projectName": "Dominio.Servicos",
+        "projectPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Servicos\\Dominio.Servicos.csproj",
+        "packagesPath": "C:\\Users\\willian.severino\\.nuget\\packages\\",
+        "outputPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Servicos\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\willian.severino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Interfaces\\Dominio.Interfaces.csproj": {
+                "projectPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Interfaces\\Dominio.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ProjetosPessoais\\OperacoesNumericas\\Testes\\Testes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ProjetosPessoais\\OperacoesNumericas\\Testes\\Testes.csproj",
+        "projectName": "Testes",
+        "projectPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Testes\\Testes.csproj",
+        "packagesPath": "C:\\Users\\willian.severino\\.nuget\\packages\\",
+        "outputPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Testes\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\willian.severino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "G:\\ProjetosPessoais\\OperacoesNumericas\\Servicos\\Dominio.Servicos.csproj": {
+                "projectPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Servicos\\Dominio.Servicos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

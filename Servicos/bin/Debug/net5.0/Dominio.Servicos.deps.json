@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Dominio.Servicos/1.0.0": {
+        "dependencies": {
+          "Dominio.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "Dominio.Servicos.dll": {}
+        }
+      },
+      "Dominio.Entidades/1.0.0": {
+        "runtime": {
+          "Dominio.Entidades.dll": {}
+        }
+      },
+      "Dominio.Interfaces/1.0.0": {
+        "dependencies": {
+          "Dominio.Entidades": "1.0.0"
+        },
+        "runtime": {
+          "Dominio.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dominio.Servicos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dominio.Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dominio.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
