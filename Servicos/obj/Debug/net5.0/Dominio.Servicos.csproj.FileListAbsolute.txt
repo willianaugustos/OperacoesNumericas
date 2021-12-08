@@ -14,3 +14,4 @@ G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\ref\Dominio.Ser
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.pdb
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dominio.Entidades.dll
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dominio.Entidades.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.csproj.CopyComplete

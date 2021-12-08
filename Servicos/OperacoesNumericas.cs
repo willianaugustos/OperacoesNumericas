@@ -10,6 +10,12 @@ namespace Dominio.Servicos
 {
     public class OperacoesNumericas : IOperacoesNumericas
     {
+        public OperacoesNumericas()
+        {
+
+        }
+
+
         public ResultadoDeAnaliseNumerica AnalisaNumero(int numero)
         {
             int[] numerosDivisores;
@@ -24,7 +30,8 @@ namespace Dominio.Servicos
         private void ObterDivisores(int numero, out int[] numerosDivisores, out int[] primosDivisores)
         {
             //número zero não tem divisores
-            if (numero == 0)
+            //embora os números negativos possuam divisores e possam ser primos, não estou tratando negativos nesse contexto
+            if (numero <= 0)
             {
                 numerosDivisores = Array.Empty<int>();
                 primosDivisores = Array.Empty<int>();
@@ -95,7 +102,7 @@ namespace Dominio.Servicos
 
             //para evitar o uso de Math.Sqrt, eu troquei por analisar o quadrado da var. auxiliar
             //Outra forma seria.. auxiliar < Math.Sqrt(numero)
-            for (int auxiliar = 2; auxiliar*auxiliar < numero; auxiliar++)
+            for (int auxiliar = 2; auxiliar*auxiliar <= numero; auxiliar++)
             {
                 if (numero % auxiliar == 0)
                 return false;
