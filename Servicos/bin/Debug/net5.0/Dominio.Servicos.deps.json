@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v5.0": {
       "Dominio.Servicos/1.0.0": {
         "dependencies": {
+          "BenchmarkDotNet.Annotations": "0.13.1",
           "Dominio.Interfaces": "1.0.0"
         },
         "runtime": {
           "Dominio.Servicos.dll": {}
+        }
+      },
+      "BenchmarkDotNet.Annotations/0.13.1": {
+        "runtime": {
+          "lib/netstandard2.0/BenchmarkDotNet.Annotations.dll": {
+            "assemblyVersion": "0.13.1.0",
+            "fileVersion": "0.13.1.0"
+          }
         }
       },
       "Dominio.Entidades/1.0.0": {
@@ -34,6 +43,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BenchmarkDotNet.Annotations/0.13.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OvHMw/GYfdrrJAM28zOXQ94kdv1s0s92ZrbkH+/79I557ONPEH/urMF8iNKuYYgLsziC4isw233L3GKq6Twe/A==",
+      "path": "benchmarkdotnet.annotations/0.13.1",
+      "hashPath": "benchmarkdotnet.annotations.0.13.1.nupkg.sha512"
     },
     "Dominio.Entidades/1.0.0": {
       "type": "project",

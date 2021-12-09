@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Dominio.Servicos.OperacoesNumericas-20211209-162424</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1348 (21H1/May2021Update)
+Intel Core i5-7400 CPU 3.00GHz (Kaby Lake), 1 CPU, 4 logical and 4 physical cores
+.NET SDK=6.0.100-rc.2.21505.57
+  [Host]     : .NET 5.0.11 (5.0.1121.47308), X64 RyuJIT  [AttachedDebugger]
+  DefaultJob : .NET 5.0.11 (5.0.1121.47308), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>       Method</th><th>numero</th><th> Mean</th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>ObterDivisoresBruto</td><td>1</td><td>21.34 ns</td><td>0.219 ns</td><td>0.194 ns</td>
+</tr><tr><td>ObterDivisores</td><td>1</td><td>198.78 ns</td><td>1.697 ns</td><td>1.587 ns</td>
+</tr><tr><td>ObterDivisoresBruto</td><td>11</td><td>101.12 ns</td><td>1.419 ns</td><td>1.327 ns</td>
+</tr><tr><td>ObterDivisores</td><td>11</td><td>360.45 ns</td><td>4.968 ns</td><td>4.647 ns</td>
+</tr><tr><td>ObterDivisoresBruto</td><td>30</td><td>226.98 ns</td><td>1.102 ns</td><td>1.031 ns</td>
+</tr><tr><td>ObterDivisores</td><td>30</td><td>846.57 ns</td><td>7.562 ns</td><td>7.073 ns</td>
+</tr><tr><td>ObterDivisoresBruto</td><td>641</td><td>1,717.27 ns</td><td>9.196 ns</td><td>8.152 ns</td>
+</tr><tr><td>ObterDivisores</td><td>641</td><td>1,215.04 ns</td><td>9.238 ns</td><td>8.189 ns</td>
+</tr></tbody></table>
+</body>
+</html>

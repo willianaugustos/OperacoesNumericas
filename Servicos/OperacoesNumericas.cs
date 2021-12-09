@@ -1,4 +1,5 @@
-﻿using Dominio.Entidades;
+﻿using BenchmarkDotNet.Attributes;
+using Dominio.Entidades;
 using Dominio.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,13 @@ namespace Dominio.Servicos
 {
     public class OperacoesNumericas : IOperacoesNumericas
     {
+        [Params(1, 11, 30, 641)]
+        public int numero { get; set; }
+        public int[] numerosDivisores { get; private set; }
+
+        public int[] primosDivisores { get; private set; }
+
+
         public OperacoesNumericas()
         {
 
@@ -18,16 +26,49 @@ namespace Dominio.Servicos
 
         public ResultadoDeAnaliseNumerica AnalisaNumero(int numero)
         {
-            int[] numerosDivisores;
-            int[] primosDivisores;
-
-            ObterDivisores(numero, out numerosDivisores, out primosDivisores);
+            this.numero = numero;
+            ObterDivisores();
 
             //AnalisaDivisores();
             return new ResultadoDeAnaliseNumerica(numerosDivisores, primosDivisores);
         }
 
-        private void ObterDivisores(int numero, out int[] numerosDivisores, out int[] primosDivisores)
+
+        [Benchmark]
+        public void ObterDivisoresBruto()
+        {
+            //Esse método foi criado como referência para o benchmark
+            //mas não é usado como o "oficial" da solução, porquê ele não está otimizado.
+
+            if (numero <= 0)
+            {
+                numerosDivisores = Array.Empty<int>();
+                primosDivisores = Array.Empty<int>();
+                return;
+            }
+
+            var divisores = new List<int>();
+            var primos = new List<int>();
+
+            for (int auxiliar = 2; auxiliar <= numero; auxiliar++)
+            {
+                if (numero % auxiliar == 0)
+                {
+                    divisores.Add(auxiliar);
+
+                    if (AnalisaPrimo(auxiliar))
+                        primos.Add(auxiliar);
+                }
+            }
+
+            //não precisa reordenar pois foram incluídos em ordem crescente
+            numerosDivisores = divisores.ToArray();
+            primosDivisores = primos.ToArray();
+        }
+
+
+        [Benchmark]
+        public void ObterDivisores()
         {
             //número zero não tem divisores
             //embora os números negativos possuam divisores e possam ser primos, não estou tratando negativos nesse contexto
@@ -39,11 +80,11 @@ namespace Dominio.Servicos
             }
 
             //todo número natural é divisível por 1
-            var divisores = new List<int>() { 1 };
+            var divisores = new HashSet<int>() { 1 };
 
             //1 não é primo, então a lista não começa com ele
             //eu descobri isso aqui: https://www.laboratoriosustentaveldematematica.com/2019/04/por-que-1-nao-e-primo-por-prof-daniela.html
-            var primos = new List<int>() { };
+            var primos = new HashSet<int>() { };
 
             //todo número é divisível por ele mesmo
             //se ele é 1, já foi adicionado à lista
@@ -60,38 +101,38 @@ namespace Dominio.Servicos
             //nenhum número pode ser divisível por um número maior que sua metade (com exceção dele próprio)
             //exemplo: 30 não tem divisores maior que 15, exceto o próprio 30.
             int limite = numero / 2;
-
-            for (int auxiliar = 2; auxiliar < limite; auxiliar++)
+            int auxiliar = 2;
+            while (auxiliar < limite)
             {
-                //se o auxiliar já está nalista, não precisa analisar
-                if (!divisores.Contains(auxiliar))
+                if (numero % auxiliar == 0) //se resto da divisão é zero, então é divisor
                 {
-                    if (numero % auxiliar == 0) //se resto da divisão é zero, então é divisor
+                    //adiciona o divisor na lista
+                    divisores.Add(auxiliar);
+
+                    //adiciona na lista também o resultado da divisão
+                    //exemplo: se 30 é divisível por 2, ele também é por 15 (resultado da divisão) 
+                    var resultado = numero / auxiliar;
+                    if (resultado != auxiliar) //não adiciona se for o próprio número. Exemplo: 9/3=3 (3 é divisor e também resultado)
                     {
-                        //adiciona o divisor na lista
-                        divisores.Add(auxiliar);
-
-                        //adiciona na lista também o resultado da divisão
-                        //exemplo: se 30 é divisível por 2, ele também é por 15 (resultado da divisão) 
-                        var resultado = numero / auxiliar;
-                        if (resultado != auxiliar) //não adiciona se for o próprio número. Exemplo: 9/3=3 (3 é divisor e também resultado)
-                        {
-                            divisores.Add(numero / auxiliar);
-                        }
-
-                        //analisa se os números são primos e adiciona à lista
-                        if (AnalisaPrimo(auxiliar))
-                            primos.Add(auxiliar);
-
-                        if (AnalisaPrimo(resultado))
-                            primos.Add(resultado);
+                        divisores.Add(numero / auxiliar);
                     }
+
+                    //analisa se os números são primos e adiciona à lista
+                    if (AnalisaPrimo(auxiliar))
+                        primos.Add(auxiliar);
+
+                    if (AnalisaPrimo(resultado))
+                        primos.Add(resultado);
+
+                    //estreita o limite máximo de tentativas
+                    limite = resultado;
                 }
+                auxiliar++;
             }
 
             //reordena e atribui a lista de divisores e primos a retornar
-            numerosDivisores = divisores.OrderBy(n=>n).ToArray();
-            primosDivisores = primos.OrderBy(n=>n).ToArray();
+            numerosDivisores = divisores.OrderBy(n => n).ToArray();
+            primosDivisores = primos.OrderBy(n => n).ToArray();
         }
 
         private bool AnalisaPrimo(int numero)
@@ -100,14 +141,15 @@ namespace Dominio.Servicos
             //então ele é primo.
             //descobri isso pesquisando aqui: https://www.cin.ufpe.br/~gdcc/matdis/aulas/divisibilidade (slide 12)
 
-            //para evitar o uso de Math.Sqrt, eu troquei por analisar o quadrado da var. auxiliar
-            //Outra forma seria.. auxiliar < Math.Sqrt(numero)
-            for (int auxiliar = 2; auxiliar*auxiliar <= numero; auxiliar++)
+            //o maior divisor de um número primo é a sua raiz quadrada arredondado para inteiro.
+            int limite = Convert.ToInt32(Math.Sqrt(numero));
+            for (int auxiliar = 2; auxiliar <= limite; auxiliar++)
             {
+                //se encontrou algum divisor, já pode parar de procurar, pois não é primo.
                 if (numero % auxiliar == 0)
-                return false;
+                    return false;
             }
-            return true; //se chegar aqu é primo
+            return true; //se chegar aqui, então é primo
         }
     }
 }

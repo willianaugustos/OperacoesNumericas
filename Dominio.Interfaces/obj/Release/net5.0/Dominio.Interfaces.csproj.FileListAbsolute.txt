@@ -1,0 +1,15 @@
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\bin\Release\net5.0\Dominio.Interfaces.deps.json
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\bin\Release\net5.0\Dominio.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\bin\Release\net5.0\ref\Dominio.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\bin\Release\net5.0\Dominio.Interfaces.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\bin\Release\net5.0\Dominio.Entidades.dll
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\bin\Release\net5.0\Dominio.Entidades.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Release\net5.0\Dominio.Interfaces.csproj.AssemblyReference.cache
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Release\net5.0\Dominio.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Release\net5.0\Dominio.Interfaces.AssemblyInfoInputs.cache
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Release\net5.0\Dominio.Interfaces.AssemblyInfo.cs
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Release\net5.0\Dominio.Interfaces.csproj.CoreCompileInputs.cache
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Release\net5.0\Dominio.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Release\net5.0\ref\Dominio.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Release\net5.0\Dominio.Interfaces.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Release\net5.0\Dominio.Interfaces.csproj.CopyComplete

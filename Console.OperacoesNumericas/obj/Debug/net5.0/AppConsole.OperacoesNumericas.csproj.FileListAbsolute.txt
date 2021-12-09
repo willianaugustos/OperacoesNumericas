@@ -52,3 +52,5 @@ G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\Dominio.Entidades.pdb
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\Dominio.Interfaces.pdb
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\Dominio.Servicos.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\BenchmarkDotNet.Annotations.dll
+G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\obj\Debug\net5.0\AppConsole.OperacoesNumericas.csproj.CopyComplete

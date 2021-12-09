@@ -104,3 +104,4 @@ G:\ProjetosPessoais\OperacoesNumericas\Testes\obj\Debug\net5.0\Testes.pdb
 G:\ProjetosPessoais\OperacoesNumericas\Testes\obj\Debug\net5.0\Testes.genruntimeconfig.cache
 G:\ProjetosPessoais\OperacoesNumericas\Testes\bin\Debug\net5.0\Dominio.Entidades.dll
 G:\ProjetosPessoais\OperacoesNumericas\Testes\bin\Debug\net5.0\Dominio.Entidades.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Testes\bin\Debug\net5.0\BenchmarkDotNet.Annotations.dll

@@ -1,0 +1,12 @@
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\bin\Release\net5.0\Dominio.Entidades.deps.json
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\bin\Release\net5.0\Dominio.Entidades.dll
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\bin\Release\net5.0\ref\Dominio.Entidades.dll
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\bin\Release\net5.0\Dominio.Entidades.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\obj\Release\net5.0\Dominio.Entidades.csproj.AssemblyReference.cache
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\obj\Release\net5.0\Dominio.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\obj\Release\net5.0\Dominio.Entidades.AssemblyInfoInputs.cache
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\obj\Release\net5.0\Dominio.Entidades.AssemblyInfo.cs
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\obj\Release\net5.0\Dominio.Entidades.csproj.CoreCompileInputs.cache
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\obj\Release\net5.0\Dominio.Entidades.dll
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\obj\Release\net5.0\ref\Dominio.Entidades.dll
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Entidades\obj\Release\net5.0\Dominio.Entidades.pdb
