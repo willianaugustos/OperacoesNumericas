@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AppConsole.OperacoesNumericas": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "RedisConnection": "localhost:6379"
+      }
+    }
+  }
+}

@@ -11,7 +11,6 @@ G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Debug\net5.0\Dominio.E
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Debug\net5.0\Infra.Interfaces.dll
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Debug\net5.0\Infra.Interfaces.pdb
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Debug\net5.0\Dominio.Entidades.pdb
-G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Debug\net5.0\Infra.Servicos.csproj.CopyComplete
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Debug\net5.0\Infra.Servicos.dll
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Debug\net5.0\ref\Infra.Servicos.dll
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Debug\net5.0\Infra.Servicos.pdb

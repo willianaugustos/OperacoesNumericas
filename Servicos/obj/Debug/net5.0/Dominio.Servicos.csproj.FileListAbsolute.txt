@@ -29,3 +29,4 @@ G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dia2Lib.dll
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\OSExtensions.dll
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Infra.Interfaces.dll
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Infra.Interfaces.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.csproj.CopyComplete

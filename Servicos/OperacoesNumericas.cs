@@ -21,7 +21,6 @@ namespace Dominio.Servicos
 
         public int[] primosDivisores { get; private set; }
 
-        //precisa ter um construtor vazio para usar o benchmark
         public OperacoesNumericas()
         {
 

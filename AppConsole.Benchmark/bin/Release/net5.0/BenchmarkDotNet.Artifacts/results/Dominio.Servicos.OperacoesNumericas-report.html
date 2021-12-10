@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>Dominio.Servicos.OperacoesNumericas-20211210-073951</title>
+<title>Dominio.Servicos.OperacoesNumericas-20211210-080700</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -16,14 +16,26 @@
 BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1348 (21H1/May2021Update)
 Intel Core i5-7400 CPU 3.00GHz (Kaby Lake), 1 CPU, 4 logical and 4 physical cores
 .NET SDK=6.0.100-rc.2.21505.57
-  [Host] : .NET 5.0.11 (5.0.1121.47308), X64 RyuJIT  [AttachedDebugger]
+  [Host]     : .NET 5.0.11 (5.0.1121.47308), X64 RyuJIT  [AttachedDebugger]
+  DefaultJob : .NET 5.0.11 (5.0.1121.47308), X64 RyuJIT
 </code></pre>
 <pre><code></code></pre>
 
 <table>
-<thead><tr><th>       Method</th><th>numero</th><th>Mean</th><th>Error</th>
+<thead><tr><th>        Method</th><th>numero</th><th> Mean</th><th>Error</th><th>StdDev</th>
 </tr>
-</thead><tbody><tr><td>ObterDivisoresBruto</td><td>1</td><td>NA</td><td>NA</td>
+</thead><tbody><tr><td>ObterDivisoresBruto</td><td>1</td><td>18.91 ns</td><td>0.116 ns</td><td>0.108 ns</td>
+</tr><tr><td>ObterDivisoresPadrao</td><td>1</td><td>NA</td><td>NA</td><td>NA</td>
+</tr><tr><td>ObterDivisoresBruto</td><td>11</td><td>94.28 ns</td><td>0.420 ns</td><td>0.351 ns</td>
+</tr><tr><td>ObterDivisoresPadrao</td><td>11</td><td>NA</td><td>NA</td><td>NA</td>
+</tr><tr><td>ObterDivisoresBruto</td><td>30</td><td>180.51 ns</td><td>2.032 ns</td><td>1.900 ns</td>
+</tr><tr><td>ObterDivisoresPadrao</td><td>30</td><td>NA</td><td>NA</td><td>NA</td>
+</tr><tr><td>ObterDivisoresBruto</td><td>641</td><td>2,986.99 ns</td><td>33.510 ns</td><td>29.706 ns</td>
+</tr><tr><td>ObterDivisoresPadrao</td><td>641</td><td>NA</td><td>NA</td><td>NA</td>
+</tr><tr><td>ObterDivisoresBruto</td><td>1510</td><td>4,329.32 ns</td><td>86.200 ns</td><td>109.015 ns</td>
+</tr><tr><td>ObterDivisoresPadrao</td><td>1510</td><td>NA</td><td>NA</td><td>NA</td>
+</tr><tr><td>ObterDivisoresBruto</td><td>1511</td><td>7,063.89 ns</td><td>140.714 ns</td><td>138.200 ns</td>
+</tr><tr><td>ObterDivisoresPadrao</td><td>1511</td><td>NA</td><td>NA</td><td>NA</td>
 </tr></tbody></table>
 </body>
 </html>

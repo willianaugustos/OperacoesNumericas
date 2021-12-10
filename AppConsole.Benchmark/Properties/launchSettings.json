@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AppConsole.Benchmark": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "RedisConnection": "localhost:6379"
+      }
+    }
+  }
+}

@@ -13,9 +13,17 @@ namespace Infra.Servicos
 
         public GerenciadorDeCache()
         {
-            //inicializa o client
-            redisClient = ConnectionMultiplexer.Connect(Environment.GetEnvironmentVariable("RedisConnection"));
-            redisDB = redisClient.GetDatabase();
+            try
+            {
+                //inicializa o client
+                redisClient = ConnectionMultiplexer.Connect(Environment.GetEnvironmentVariable("RedisConnection"));
+                redisDB = redisClient.GetDatabase();
+            }
+            catch (Exception e)
+            {
+                //não conseguiu prossegue sem o cache
+                Debug.WriteLine("Ocorreu erro no acesso ao serviço de cache: " + e.ToString());
+            }
         }
         public void Armazena(string chave, object item, int duracaoSegundos = 60)
         {

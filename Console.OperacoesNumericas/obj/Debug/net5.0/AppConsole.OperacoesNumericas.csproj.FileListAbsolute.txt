@@ -53,7 +53,6 @@ G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\Dominio.Interfaces.pdb
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\Dominio.Servicos.pdb
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\BenchmarkDotNet.Annotations.dll
-G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\obj\Debug\net5.0\AppConsole.OperacoesNumericas.csproj.CopyComplete
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\TraceReloggerLib.dll
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\Dia2Lib.dll
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\OSExtensions.dll
