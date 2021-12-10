@@ -8,14 +8,14 @@ O limite ajuda a identificar quando não é mais necessário testar as divisões
 
 Por exemplo, se analisamos os divisores de 30, o maior divisor a ser analisado é 15. Como sabemos disso?
 
-30 é divisível por 2, cujo resultado é 15. Dessa forma sabemos que 30 também é divisível por 15 sem fazer uma nova tentativa de divisão. Mas não há como 30 ser divisível por um número maior do que 15.
+30 é divisível por 2, cujo resultado é 15. Dessa forma sabemos que 30 também é divisível por 15 sem fazer uma nova tentativa de divisão. Uma vez que descobrimos que 30 é divisível por 2 e resultado é 15, sabemos também que não há como 30 ser divisível por um número maior do que 15, exceto por ele mesmo.
 
 Considere agora, o exemplo do número 91. 
 
 Os divisores são: 1, 7, 13 e 91. Observamos que o menor divisor depois de 1 é 7.
-91 dividido por 7 é igual a 13. Desse modo, podemos concluir que não há nenhum outro número >=13 que seja múltiplo de 91.
+91 dividido por 7 é igual a 13. Desse modo, podemos concluir que não há nenhum outro número >=13 que seja múltiplo de 91, exceto o próprio 91.
 
-Portanto, o maior divisor de um número "N", é definido como: o resultado (quociente) da divisão de um número pelo menor divisor.
+Portanto, o maior divisor de um número "N", é definido como: o resultado da divisão de um número pelo menor divisor.
 
    MaiorDivisor = (Numero / MenorDivisor)
    
