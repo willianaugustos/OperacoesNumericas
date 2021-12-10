@@ -127,3 +127,4 @@ G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\Infra.Servicos.dll
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\Infra.Interfaces.pdb
 G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\bin\Debug\net5.0\Infra.Servicos.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Console.OperacoesNumericas\obj\Debug\net5.0\AppConsole.OperacoesNumericas.csproj.CopyComplete
