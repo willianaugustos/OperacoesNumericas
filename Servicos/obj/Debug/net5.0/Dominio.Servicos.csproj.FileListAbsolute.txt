@@ -14,3 +14,17 @@ G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\ref\Dominio.Ser
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.pdb
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dominio.Entidades.dll
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dominio.Entidades.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\x86\KernelTraceControl.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\x86\KernelTraceControl.Win61.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\x86\msdia140.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\x86\msvcp140.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\x86\vcruntime140.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\amd64\KernelTraceControl.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\amd64\msdia140.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\amd64\msvcp140.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\amd64\vcruntime140.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\amd64\vcruntime140_1.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\TraceReloggerLib.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\Dia2Lib.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Debug\net5.0\OSExtensions.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Debug\net5.0\Dominio.Servicos.csproj.CopyComplete

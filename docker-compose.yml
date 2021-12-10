@@ -1,0 +1,44 @@
+version: '3.4'
+
+networks:
+  desafio:
+       driver: bridge
+
+services:
+
+    redis:
+      container_name: redis
+      hostname: redis
+      image: "redis:alpine3.14"
+      ports:
+        - "6379:6379"
+      volumes:
+       - g:/docker/redis/redis-data:/data
+      environment:
+       - REDIS_REPLICATION_MODE=master
+      networks:
+       - desafio
+
+    webapi:
+      container_name: webapi
+      hostname: webapi
+      image: webapi:rc1
+      build:
+        context: .
+        dockerfile: Dockerfile
+      environment:
+        - RedisConnection=redis:6379
+        - ASPNETCORE_URLS=http://+:5000
+        - ASPNETCORE_ENVIRONMENT=development
+      ports:
+        - '8080:5000'
+      deploy:
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 300M
+      depends_on:
+       - redis
+      restart: always
+      networks:
+       - desafio

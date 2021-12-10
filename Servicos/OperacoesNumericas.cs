@@ -11,7 +11,7 @@ namespace Dominio.Servicos
 {
     public class OperacoesNumericas : IOperacoesNumericas
     {
-        [Params(1, 11, 30, 641)]
+        [Params(1, 11, 30, 641, 1510, 1511)]
         public int numero { get; set; }
         public int[] numerosDivisores { get; private set; }
 
@@ -27,7 +27,7 @@ namespace Dominio.Servicos
         public ResultadoDeAnaliseNumerica AnalisaNumero(int numero)
         {
             this.numero = numero;
-            ObterDivisores();
+            ObterDivisoresPadrao();
 
             //AnalisaDivisores();
             return new ResultadoDeAnaliseNumerica(numerosDivisores, primosDivisores);
@@ -56,7 +56,7 @@ namespace Dominio.Servicos
                 {
                     divisores.Add(auxiliar);
 
-                    if (AnalisaPrimo(auxiliar))
+                    if (AnalisaPrimoBruto(auxiliar))
                         primos.Add(auxiliar);
                 }
             }
@@ -68,7 +68,7 @@ namespace Dominio.Servicos
 
 
         [Benchmark]
-        public void ObterDivisores()
+        public void ObterDivisoresPadrao()
         {
             //número zero não tem divisores
             //embora os números negativos possuam divisores e possam ser primos, não estou tratando negativos nesse contexto
@@ -93,13 +93,14 @@ namespace Dominio.Servicos
                 divisores.Add(numero);
 
                 //se é primo, inclui na lista
-                if (AnalisaPrimo(numero))
+                if (AnalisaPrimoPadrao(numero))
                     primos.Add(numero);
             }
 
             //define o maior número "possivelmente" divisor como sendo a metade...
             //nenhum número pode ser divisível por um número maior que sua metade (com exceção dele próprio)
             //exemplo: 30 não tem divisores maior que 15, exceto o próprio 30.
+            //mais à frente o algoritmo vai reduzir esse limite ainda mais, conforme for descobrindo novos divisores
             int limite = numero / 2;
             int auxiliar = 2;
             while (auxiliar < limite)
@@ -118,10 +119,10 @@ namespace Dominio.Servicos
                     }
 
                     //analisa se os números são primos e adiciona à lista
-                    if (AnalisaPrimo(auxiliar))
+                    if (AnalisaPrimoPadrao(auxiliar))
                         primos.Add(auxiliar);
 
-                    if (AnalisaPrimo(resultado))
+                    if (AnalisaPrimoPadrao(resultado))
                         primos.Add(resultado);
 
                     //estreita o limite máximo de tentativas
@@ -135,7 +136,7 @@ namespace Dominio.Servicos
             primosDivisores = primos.OrderBy(n => n).ToArray();
         }
 
-        private bool AnalisaPrimo(int numero)
+        private bool AnalisaPrimoPadrao(int numero)
         {
             //se um número não tiver divisores menores ou iguais a sua raiz quadrada,
             //então ele é primo.
@@ -146,6 +147,20 @@ namespace Dominio.Servicos
             for (int auxiliar = 2; auxiliar <= limite; auxiliar++)
             {
                 //se encontrou algum divisor, já pode parar de procurar, pois não é primo.
+                if (numero % auxiliar == 0)
+                    return false;
+            }
+            return true; //se chegar aqui, então é primo
+        }
+
+
+        private bool AnalisaPrimoBruto(int numero)
+        {
+            //esse não é o algoritmo da solução
+            //criei ele apenas para fins comparativos com o método "padrão"
+
+            for (int auxiliar = 2; auxiliar <= numero; auxiliar++)
+            {
                 if (numero % auxiliar == 0)
                     return false;
             }

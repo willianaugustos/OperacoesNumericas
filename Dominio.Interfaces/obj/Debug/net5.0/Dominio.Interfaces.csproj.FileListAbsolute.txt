@@ -12,3 +12,4 @@ G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Debug\net5.0\ref\D
 G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Debug\net5.0\Dominio.Interfaces.pdb
 G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\bin\Debug\net5.0\Dominio.Entidades.dll
 G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\bin\Debug\net5.0\Dominio.Entidades.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Dominio.Interfaces\obj\Debug\net5.0\Dominio.Interfaces.csproj.CopyComplete

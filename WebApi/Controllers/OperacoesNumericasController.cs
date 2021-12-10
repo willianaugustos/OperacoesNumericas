@@ -1,10 +1,12 @@
 ﻿using Dominio.Interfaces;
+using Dominio.Servicos;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApi.Models;
 
 namespace WebApi.Controllers
 {
@@ -12,18 +14,20 @@ namespace WebApi.Controllers
     [Route("[controller]")]
     public class OperacoesNumericasController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<OperacoesNumericasController> _logger;
         private readonly IOperacoesNumericas _servicoOperacoesNumericas;
 
         public OperacoesNumericasController(ILogger<OperacoesNumericasController> logger, IOperacoesNumericas servicoOperacoesNumericas)
         {
             _logger = logger;
-            _servicoOperacoesNumericas = servicoOperacoesNumericas;
+            //_servicoOperacoesNumericas = servicoOperacoesNumericas;
+            _servicoOperacoesNumericas = new OperacoesNumericas();
+        }
+        [HttpGet]
+        [Route("/api/info")]
+        public string Info()
+        {
+            return Environment.GetEnvironmentVariable("RedisConnection");
         }
 
         [HttpGet]

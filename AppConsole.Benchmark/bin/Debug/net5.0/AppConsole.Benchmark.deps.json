@@ -9,6 +9,7 @@
       "AppConsole.Benchmark/1.0.0": {
         "dependencies": {
           "BenchmarkDotNet": "0.13.1",
+          "Dominio.Servicos": "1.0.0",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
@@ -968,6 +969,29 @@
           "System.Xml.XDocument": "4.3.0",
           "System.Xml.XPath": "4.3.0"
         }
+      },
+      "Dominio.Entidades/1.0.0": {
+        "runtime": {
+          "Dominio.Entidades.dll": {}
+        }
+      },
+      "Dominio.Interfaces/1.0.0": {
+        "dependencies": {
+          "Dominio.Entidades": "1.0.0"
+        },
+        "runtime": {
+          "Dominio.Interfaces.dll": {}
+        }
+      },
+      "Dominio.Servicos/1.0.0": {
+        "dependencies": {
+          "BenchmarkDotNet": "0.13.1",
+          "BenchmarkDotNet.Annotations": "0.13.1",
+          "Dominio.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "Dominio.Servicos.dll": {}
+        }
       }
     }
   },
@@ -1648,6 +1672,21 @@
       "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Dominio.Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dominio.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dominio.Servicos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

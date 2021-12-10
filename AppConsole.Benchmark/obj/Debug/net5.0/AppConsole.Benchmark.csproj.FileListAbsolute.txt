@@ -69,3 +69,10 @@ G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\tr\
 G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\Dominio.Entidades.dll
+G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\Dominio.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\Dominio.Servicos.dll
+G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\Dominio.Servicos.pdb
+G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\Dominio.Entidades.pdb
+G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\Dominio.Interfaces.pdb
+G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\obj\Debug\net5.0\AppConsole.Benchmark.csproj.CopyComplete
