@@ -27,4 +27,5 @@ G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Release\net5.0\amd64\vcrunti
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Release\net5.0\TraceReloggerLib.dll
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Release\net5.0\Dia2Lib.dll
 G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Release\net5.0\OSExtensions.dll
-G:\ProjetosPessoais\OperacoesNumericas\Servicos\obj\Release\net5.0\Dominio.Servicos.csproj.CopyComplete
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Release\net5.0\Infra.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\Servicos\bin\Release\net5.0\Infra.Interfaces.pdb

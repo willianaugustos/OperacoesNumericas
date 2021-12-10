@@ -1619,13 +1619,27 @@
         "dependencies": {
           "BenchmarkDotNet": "0.13.1",
           "BenchmarkDotNet.Annotations": "0.13.1",
-          "Dominio.Interfaces": "1.0.0"
+          "Dominio.Interfaces": "1.0.0",
+          "Infra.Interfaces": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Dominio.Servicos.dll": {}
         },
         "runtime": {
           "bin/placeholder/Dominio.Servicos.dll": {}
+        }
+      },
+      "Infra.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Dominio.Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infra.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.Interfaces.dll": {}
         }
       }
     }
@@ -5498,6 +5512,11 @@
       "type": "project",
       "path": "../Servicos/Dominio.Servicos.csproj",
       "msbuildProject": "../Servicos/Dominio.Servicos.csproj"
+    },
+    "Infra.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Infra.Interfaces/Infra.Interfaces.csproj",
+      "msbuildProject": "../Infra.Interfaces/Infra.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {

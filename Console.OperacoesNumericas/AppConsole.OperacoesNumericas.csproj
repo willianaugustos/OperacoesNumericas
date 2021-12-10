@@ -12,6 +12,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Dominio.Entidades\Dominio.Entidades.csproj" />
     <ProjectReference Include="..\Dominio.Interfaces\Dominio.Interfaces.csproj" />
+    <ProjectReference Include="..\Infra.Interfaces\Infra.Interfaces.csproj" />
+    <ProjectReference Include="..\Infra.Servicos\Infra.Servicos.csproj" />
     <ProjectReference Include="..\Servicos\Dominio.Servicos.csproj" />
   </ItemGroup>
 

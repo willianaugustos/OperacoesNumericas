@@ -41,11 +41,30 @@ namespace Infra.Servicos
             try
             {
                 var strObj = redisDB.StringGet(chave);
-                
+
                 if (string.IsNullOrEmpty(strObj))
                     return null;
 
                 var obj = Newtonsoft.Json.JsonConvert.DeserializeObject<T>(strObj);
+                return obj;
+            }
+            catch (Exception e)
+            {
+                //não conseguiu recuperar do cache, retorna nulo
+                Debug.WriteLine("Ocorreu erro no acesso ao serviço de cache: " + e.ToString());
+                return null;
+            }
+        }
+
+        public bool? RecuperaBool(string chave)
+        {
+            try
+            {
+                var strObj = redisDB.StringGet(chave);
+                if (string.IsNullOrEmpty(strObj))
+                    return null;
+
+                var obj = Newtonsoft.Json.JsonConvert.DeserializeObject<bool?>(strObj);
                 return obj;
             }
             catch (Exception e)

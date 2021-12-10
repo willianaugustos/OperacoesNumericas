@@ -29,6 +29,7 @@ namespace WebApi
         {
 
             services.AddControllers();
+            services.AddSingleton<Infra.Interfaces.IGerenciadorDeCache, Infra.Servicos.GerenciadorDeCache>();
             services.AddScoped<IOperacoesNumericas, Dominio.Servicos.OperacoesNumericas>();
             services.AddSwaggerGen(c =>
             {

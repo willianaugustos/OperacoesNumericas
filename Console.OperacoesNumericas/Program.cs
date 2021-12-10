@@ -24,7 +24,8 @@ namespace AppConsole.OperacoesNumericas
 
                 //obtem o serviço para realizar as operações:
                 //poderia ter usado Injeção de Dependencia aqui, mas simplifiquei
-                var servicoOperacoesNumericas = new Dominio.Servicos.OperacoesNumericas();
+                var servicoCache = new Infra.Servicos.GerenciadorDeCache();
+                var servicoOperacoesNumericas = new Dominio.Servicos.OperacoesNumericas(servicoCache);
 
                 var resultado = servicoOperacoesNumericas.AnalisaNumero(numero);
 

@@ -1,5 +1,6 @@
 ﻿using Dominio.Interfaces;
 using Dominio.Servicos;
+using Infra.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -15,13 +16,14 @@ namespace WebApi.Controllers
     public class OperacoesNumericasController : ControllerBase
     {
         private readonly ILogger<OperacoesNumericasController> _logger;
+        private readonly IGerenciadorDeCache _servicoCache;
         private readonly IOperacoesNumericas _servicoOperacoesNumericas;
 
         public OperacoesNumericasController(ILogger<OperacoesNumericasController> logger, IOperacoesNumericas servicoOperacoesNumericas)
         {
             _logger = logger;
-            //_servicoOperacoesNumericas = servicoOperacoesNumericas;
-            _servicoOperacoesNumericas = new OperacoesNumericas();
+            _servicoCache = new Infra.Servicos.GerenciadorDeCache();
+            _servicoOperacoesNumericas = new OperacoesNumericas(_servicoCache);
         }
 
         [HttpGet]

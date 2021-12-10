@@ -8,5 +8,6 @@ namespace Infra.Interfaces
         void Armazena(string chave, object item, int duracaoSegundos = 60);
 
         EntidadeBase RecuperaObjeto<T>(string chave) where T : EntidadeBase;
+        bool? RecuperaBool(string chave);
     }
 }

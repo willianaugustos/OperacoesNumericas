@@ -1603,6 +1603,19 @@
         "runtime": {
           "bin/placeholder/Dominio.Interfaces.dll": {}
         }
+      },
+      "Infra.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Dominio.Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infra.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.Interfaces.dll": {}
+        }
       }
     }
   },
@@ -5442,13 +5455,19 @@
       "type": "project",
       "path": "../Dominio.Interfaces/Dominio.Interfaces.csproj",
       "msbuildProject": "../Dominio.Interfaces/Dominio.Interfaces.csproj"
+    },
+    "Infra.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Infra.Interfaces/Infra.Interfaces.csproj",
+      "msbuildProject": "../Infra.Interfaces/Infra.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "BenchmarkDotNet >= 0.13.1",
       "BenchmarkDotNet.Annotations >= 0.13.1",
-      "Dominio.Interfaces >= 1.0.0"
+      "Dominio.Interfaces >= 1.0.0",
+      "Infra.Interfaces >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5480,6 +5499,9 @@
           "projectReferences": {
             "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Interfaces\\Dominio.Interfaces.csproj": {
               "projectPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Dominio.Interfaces\\Dominio.Interfaces.csproj"
+            },
+            "G:\\ProjetosPessoais\\OperacoesNumericas\\Infra.Interfaces\\Infra.Interfaces.csproj": {
+              "projectPath": "G:\\ProjetosPessoais\\OperacoesNumericas\\Infra.Interfaces\\Infra.Interfaces.csproj"
             }
           }
         }

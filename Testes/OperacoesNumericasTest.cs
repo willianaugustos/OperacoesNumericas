@@ -1,5 +1,8 @@
+using Dominio.Entidades;
 using Dominio.Servicos;
+using Infra.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 using System;
 
 namespace Testes
@@ -12,7 +15,12 @@ namespace Testes
         [TestInitialize]
         public void InicializarServicos()
         {
-            this.servOperacoesNumericas = new OperacoesNumericas();
+            Mock<IGerenciadorDeCache> _mockCache = new Mock<IGerenciadorDeCache>();
+
+            //retorna null no cache sempre
+            _mockCache.Setup(f => f.RecuperaObjeto<EntidadeBase>(It.IsAny<string>())).Returns(()=>null);
+
+            this.servOperacoesNumericas = new OperacoesNumericas(_mockCache.Object);
         }
 
         [TestMethod]

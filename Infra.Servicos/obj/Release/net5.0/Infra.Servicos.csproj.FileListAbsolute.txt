@@ -1,0 +1,17 @@
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Release\net5.0\Infra.Servicos.deps.json
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Release\net5.0\Infra.Servicos.dll
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Release\net5.0\ref\Infra.Servicos.dll
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Release\net5.0\Infra.Servicos.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Release\net5.0\Dominio.Entidades.dll
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Release\net5.0\Infra.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Release\net5.0\Infra.Interfaces.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\bin\Release\net5.0\Dominio.Entidades.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Release\net5.0\Infra.Servicos.csproj.AssemblyReference.cache
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Release\net5.0\Infra.Servicos.GeneratedMSBuildEditorConfig.editorconfig
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Release\net5.0\Infra.Servicos.AssemblyInfoInputs.cache
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Release\net5.0\Infra.Servicos.AssemblyInfo.cs
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Release\net5.0\Infra.Servicos.csproj.CoreCompileInputs.cache
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Release\net5.0\Infra.Servicos.csproj.CopyComplete
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Release\net5.0\Infra.Servicos.dll
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Release\net5.0\ref\Infra.Servicos.dll
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Servicos\obj\Release\net5.0\Infra.Servicos.pdb

@@ -9,7 +9,7 @@ G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Debug\net5.0\Infra.I
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Debug\net5.0\Infra.Interfaces.AssemblyInfoInputs.cache
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Debug\net5.0\Infra.Interfaces.AssemblyInfo.cs
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Debug\net5.0\Infra.Interfaces.csproj.CoreCompileInputs.cache
-G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Debug\net5.0\Infra.Interfaces.csproj.CopyComplete
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Debug\net5.0\Infra.Interfaces.dll
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Debug\net5.0\ref\Infra.Interfaces.dll
 G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Debug\net5.0\Infra.Interfaces.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Debug\net5.0\Infra.Interfaces.csproj.CopyComplete

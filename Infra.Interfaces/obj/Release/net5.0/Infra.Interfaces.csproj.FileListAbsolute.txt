@@ -1,0 +1,15 @@
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\bin\Release\net5.0\Infra.Interfaces.deps.json
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\bin\Release\net5.0\Infra.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\bin\Release\net5.0\ref\Infra.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\bin\Release\net5.0\Infra.Interfaces.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\bin\Release\net5.0\Dominio.Entidades.dll
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\bin\Release\net5.0\Dominio.Entidades.pdb
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Release\net5.0\Infra.Interfaces.csproj.AssemblyReference.cache
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Release\net5.0\Infra.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Release\net5.0\Infra.Interfaces.AssemblyInfoInputs.cache
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Release\net5.0\Infra.Interfaces.AssemblyInfo.cs
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Release\net5.0\Infra.Interfaces.csproj.CoreCompileInputs.cache
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Release\net5.0\Infra.Interfaces.csproj.CopyComplete
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Release\net5.0\Infra.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Release\net5.0\ref\Infra.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\Infra.Interfaces\obj\Release\net5.0\Infra.Interfaces.pdb

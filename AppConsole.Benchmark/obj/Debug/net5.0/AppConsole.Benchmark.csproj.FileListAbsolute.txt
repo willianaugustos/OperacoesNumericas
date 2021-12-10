@@ -76,3 +76,5 @@ G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\Dom
 G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\Dominio.Entidades.pdb
 G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\Dominio.Interfaces.pdb
 G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\obj\Debug\net5.0\AppConsole.Benchmark.csproj.CopyComplete
+G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\Infra.Interfaces.dll
+G:\ProjetosPessoais\OperacoesNumericas\AppConsole.Benchmark\bin\Debug\net5.0\Infra.Interfaces.pdb

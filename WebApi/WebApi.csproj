@@ -22,6 +22,7 @@
     <ProjectReference Include="..\Dominio.Interfaces\Dominio.Interfaces.csproj">
       <Private>true</Private>
     </ProjectReference>
+    <ProjectReference Include="..\Infra.Servicos\Infra.Servicos.csproj" />
     <ProjectReference Include="..\Servicos\Dominio.Servicos.csproj">
       <Private>true</Private>
     </ProjectReference>

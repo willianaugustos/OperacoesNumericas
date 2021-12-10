@@ -1,6 +1,7 @@
 ﻿using BenchmarkDotNet.Attributes;
 using Dominio.Entidades;
 using Dominio.Interfaces;
+using Infra.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +12,23 @@ namespace Dominio.Servicos
 {
     public class OperacoesNumericas : IOperacoesNumericas
     {
+        private readonly IGerenciadorDeCache servicoCache;
+
+
         [Params(1, 11, 30, 641, 1510, 1511)]
         public int numero { get; set; }
         public int[] numerosDivisores { get; private set; }
 
         public int[] primosDivisores { get; private set; }
 
-
+        //precisa ter um construtor vazio para usar o benchmark
         public OperacoesNumericas()
         {
 
+        }
+        public OperacoesNumericas(IGerenciadorDeCache servicoCache)
+        {
+            this.servicoCache = servicoCache;
         }
 
 
@@ -70,89 +78,120 @@ namespace Dominio.Servicos
         [Benchmark]
         public void ObterDivisoresPadrao()
         {
-            //número zero não tem divisores
-            //embora os números negativos possuam divisores e possam ser primos, não estou tratando negativos nesse contexto
-            if (numero <= 0)
+            //consulta no cache primeiro
+            ResultadoDeAnaliseNumerica objCache = (ResultadoDeAnaliseNumerica)this.servicoCache.RecuperaObjeto<ResultadoDeAnaliseNumerica>($"resultados/{numero}");
+
+            if (objCache == null)
             {
-                numerosDivisores = Array.Empty<int>();
-                primosDivisores = Array.Empty<int>();
-                return;
-            }
-
-            //todo número natural é divisível por 1
-            var divisores = new HashSet<int>() { 1 };
-
-            //1 não é primo, então a lista não começa com ele
-            //eu descobri isso aqui: https://www.laboratoriosustentaveldematematica.com/2019/04/por-que-1-nao-e-primo-por-prof-daniela.html
-            var primos = new HashSet<int>() { };
-
-            //todo número é divisível por ele mesmo
-            //se ele é 1, já foi adicionado à lista
-            if (numero != 1)
-            {
-                divisores.Add(numero);
-
-                //se é primo, inclui na lista
-                if (AnalisaPrimoPadrao(numero))
-                    primos.Add(numero);
-            }
-
-            //define o maior número "possivelmente" divisor como sendo a metade...
-            //nenhum número pode ser divisível por um número maior que sua metade (com exceção dele próprio)
-            //exemplo: 30 não tem divisores maior que 15, exceto o próprio 30.
-            //mais à frente o algoritmo vai reduzir esse limite ainda mais, conforme for descobrindo novos divisores
-            int limite = numero / 2;
-            int auxiliar = 2;
-            while (auxiliar < limite)
-            {
-                if (numero % auxiliar == 0) //se resto da divisão é zero, então é divisor
+                //número zero não tem divisores
+                //embora os números negativos possuam divisores e possam ser primos, não estou tratando negativos nesse contexto
+                if (numero <= 0)
                 {
-                    //adiciona o divisor na lista
-                    divisores.Add(auxiliar);
-
-                    //adiciona na lista também o resultado da divisão
-                    //exemplo: se 30 é divisível por 2, ele também é por 15 (resultado da divisão) 
-                    var resultado = numero / auxiliar;
-                    if (resultado != auxiliar) //não adiciona se for o próprio número. Exemplo: 9/3=3 (3 é divisor e também resultado)
-                    {
-                        divisores.Add(numero / auxiliar);
-                    }
-
-                    //analisa se os números são primos e adiciona à lista
-                    if (AnalisaPrimoPadrao(auxiliar))
-                        primos.Add(auxiliar);
-
-                    if (AnalisaPrimoPadrao(resultado))
-                        primos.Add(resultado);
-
-                    //estreita o limite máximo de tentativas
-                    limite = resultado;
+                    numerosDivisores = Array.Empty<int>();
+                    primosDivisores = Array.Empty<int>();
+                    return;
                 }
-                auxiliar++;
-            }
 
-            //reordena e atribui a lista de divisores e primos a retornar
-            numerosDivisores = divisores.OrderBy(n => n).ToArray();
-            primosDivisores = primos.OrderBy(n => n).ToArray();
+                //todo número natural é divisível por 1
+                var divisores = new HashSet<int>() { 1 };
+
+                //1 não é primo, então a lista não começa com ele
+                //eu descobri isso aqui: https://www.laboratoriosustentaveldematematica.com/2019/04/por-que-1-nao-e-primo-por-prof-daniela.html
+                var primos = new HashSet<int>() { };
+
+                //todo número é divisível por ele mesmo
+                //se ele é 1, já foi adicionado à lista
+                if (numero != 1)
+                {
+                    divisores.Add(numero);
+
+                    //se é primo, inclui na lista
+                    if (AnalisaPrimoPadrao(numero))
+                        primos.Add(numero);
+                }
+
+                //define o maior número "possivelmente" divisor como sendo a metade...
+                //nenhum número pode ser divisível por um número maior que sua metade (com exceção dele próprio)
+                //exemplo: 30 não tem divisores maior que 15, exceto o próprio 30.
+                //mais à frente o algoritmo vai reduzir esse limite ainda mais, conforme for descobrindo novos divisores
+                int limite = numero / 2;
+                int auxiliar = 2;
+                while (auxiliar < limite)
+                {
+                    if (numero % auxiliar == 0) //se resto da divisão é zero, então é divisor
+                    {
+                        //adiciona o divisor na lista
+                        divisores.Add(auxiliar);
+
+                        //adiciona na lista também o resultado da divisão
+                        //exemplo: se 30 é divisível por 2, ele também é por 15 (resultado da divisão) 
+                        var resultado = numero / auxiliar;
+                        if (resultado != auxiliar) //não adiciona se for o próprio número. Exemplo: 9/3=3 (3 é divisor e também resultado)
+                        {
+                            divisores.Add(numero / auxiliar);
+                        }
+
+                        //analisa se os números são primos e adiciona à lista
+                        if (AnalisaPrimoPadrao(auxiliar))
+                            primos.Add(auxiliar);
+
+                        if (AnalisaPrimoPadrao(resultado))
+                            primos.Add(resultado);
+
+                        //estreita o limite máximo de tentativas
+                        limite = resultado;
+                    }
+                    auxiliar++;
+                }
+
+                //reordena e atribui a lista de divisores e primos a retornar
+                numerosDivisores = divisores.OrderBy(n => n).ToArray();
+                primosDivisores = primos.OrderBy(n => n).ToArray();
+
+
+                //armazena o cache para consultas futuras
+                servicoCache.Armazena($"resultados/{numero}", new ResultadoDeAnaliseNumerica(this.numerosDivisores, this.primosDivisores));
+            }
+            else
+            {
+                //recupera do objeto do cache
+                numerosDivisores = objCache.NumerosDivisores;
+                primosDivisores = objCache.DivisoresPrimos;
+            }
         }
 
         private bool AnalisaPrimoPadrao(int numero)
         {
-            //se um número não tiver divisores menores ou iguais a sua raiz quadrada,
-            //então ele é primo.
-            //descobri isso pesquisando aqui: https://www.cin.ufpe.br/~gdcc/matdis/aulas/divisibilidade (slide 12)
+            //procura no cache, se existir, retorna
+            bool? primoCache = this.servicoCache.RecuperaBool($"primos/{numero}");
 
-            //o maior divisor de um número primo é a sua raiz quadrada arredondado para inteiro.
-            int limite = Convert.ToInt32(Math.Sqrt(numero));
-            for (int auxiliar = 2; auxiliar <= limite; auxiliar++)
+            if (primoCache == null)
             {
-                //se encontrou algum divisor, já pode parar de procurar, pois não é primo.
-                if (numero % auxiliar == 0)
-                    return false;
-            }
-            return true; //se chegar aqui, então é primo
-        }
 
+
+                //se um número não tiver divisores menores ou iguais a sua raiz quadrada,
+                //então ele é primo.
+                //descobri isso pesquisando aqui: https://www.cin.ufpe.br/~gdcc/matdis/aulas/divisibilidade (slide 12)
+
+                //o maior divisor de um número primo é a sua raiz quadrada arredondado para inteiro.
+                int limite = Convert.ToInt32(Math.Sqrt(numero));
+                for (int auxiliar = 2; auxiliar <= limite; auxiliar++)
+                {
+                    //se encontrou algum divisor, já pode parar de procurar, pois não é primo.
+                    if (numero % auxiliar == 0)
+                    {
+                        this.servicoCache.Armazena($"primos/{numero}", false);
+                        return false;
+                    }
+
+                }
+
+                //se chegar aqui, então é primo
+                this.servicoCache.Armazena($"primos/{numero}", true);//armazena o cache
+                return true;
+            }
+            else return primoCache.Value; //retorna o que estava no cache
+        }
 
         private bool AnalisaPrimoBruto(int numero)
         {
