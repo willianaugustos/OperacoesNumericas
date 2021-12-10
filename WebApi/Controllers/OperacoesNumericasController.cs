@@ -23,12 +23,6 @@ namespace WebApi.Controllers
             //_servicoOperacoesNumericas = servicoOperacoesNumericas;
             _servicoOperacoesNumericas = new OperacoesNumericas();
         }
-        [HttpGet]
-        [Route("/api/info")]
-        public string Info()
-        {
-            return Environment.GetEnvironmentVariable("RedisConnection");
-        }
 
         [HttpGet]
         public ResultadoDivisoresDTO Get(int numero)

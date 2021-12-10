@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Dominio.Entidades
 {
-    public class ResultadoDeAnaliseNumerica
+    public class ResultadoDeAnaliseNumerica : EntidadeBase
     {
         /// <summary>
         /// Lista dos números primos que são divisores do número analisado

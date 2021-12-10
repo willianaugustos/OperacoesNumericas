@@ -14,6 +14,7 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
+        "RedisConnection": "redis:6379",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
